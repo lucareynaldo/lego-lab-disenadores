@@ -1,0 +1,10 @@
+0 LDCad shadow info for "~Panel Cone  4 x  8 x  8 Elliptic Parabolic Half {unofficial}"
+
+0 Author: LDCad Shadow Library
+0 !LICENSE CC BY-SA 4.0, see LICENSE.md
+
+0 !HISTORY 2026-04-15 {Philippe Hurbain} Initial info for s\8097s01.dat {unofficial}
+
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=70 192 -10]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=50 192 -50]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=10 192 -70]

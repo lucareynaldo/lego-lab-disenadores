@@ -1,0 +1,28 @@
+0 LDCad shadow info for "~Car Steering Wheel  5 x  5 with Two Spokes and  2 x  2 Stud Centre with Axlehole - Quarter"
+
+0 Author: LDCad Shadow Library
+0 !LICENSE CC BY-SA 4.0, see LICENSE.md
+
+0 !HISTORY 2026-04-14 {Philippe Hurbain} Initial info for s\67811s01.dat
+
+0 !LDCAD SNAP_CYL [gender=M] [caps=one] [secs=R 6 4] [pos=10 0 10]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=10 16 10]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=40 -6 0] [ori=0 0 -1 1 0 0 0 -1 0]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=39.84778792 -6 3.48622971] [ori=0 0.08715574 -0.9961947 1 0 0 0 -0.9961947 -0.08715574]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=39.39231012 -6 6.94592711] [ori=0 0.17364818 -0.98480775 1 0 0 0 -0.98480775 -0.17364818]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=38.63703305 -6 10.3527618] [ori=0 0.25881905 -0.96592583 1 0 0 0 -0.96592583 -0.25881905]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=37.58770483 -6 13.68080573] [ori=0 0.34202014 -0.93969262 1 0 0 0 -0.93969262 -0.34202014]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=36.25231148 -6 16.90473047] [ori=0 0.42261826 -0.90630779 1 0 0 0 -0.90630779 -0.42261826]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=34.64101615 -6 20] [ori=0 0.5 -0.8660254 1 0 0 0 -0.8660254 -0.5]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=32.76608177 -6 22.94305745] [ori=0 0.57357644 -0.81915204 1 0 0 0 -0.81915204 -0.57357644]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=32.76608177 -6 22.94305745] [ori=0 0.57357644 -0.81915204 1 0 0 0 -0.81915204 -0.57357644]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=30.64177772 -6 25.71150439] [ori=0 0.64278761 -0.76604444 1 0 0 0 -0.76604444 -0.64278761]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=28.28427125 -6 28.28427125] [ori=0 0.70710678 -0.70710678 1 0 0 0 -0.70710678 -0.70710678]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=25.71150439 -6 30.64177772] [ori=0 0.76604444 -0.64278761 1 0 0 0 -0.64278761 -0.76604444]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=22.94305745 -6 32.76608177] [ori=0 0.81915204 -0.57357644 1 0 0 0 -0.57357644 -0.81915204]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=20 -6 34.64101615] [ori=0 0.8660254 -0.5 1 0 0 0 -0.5 -0.8660254]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=16.90473047 -6 36.25231148] [ori=0 0.90630779 -0.42261826 1 0 0 0 -0.42261826 -0.90630779]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=13.68080573 -6 37.58770483] [ori=0 0.93969262 -0.34202014 1 0 0 0 -0.34202014 -0.93969262]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=3.48622971 -6 39.84778792] [ori=0 0.9961947 -0.08715574 1 0 0 0 -0.08715574 -0.9961947]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=6.94592711 -6 39.39231012] [ori=0 0.98480775 -0.17364818 1 0 0 0 -0.17364818 -0.98480775]
+0 !LDCAD SNAP_CYL [gender=M] [caps=none] [secs=R 4 4] [pos=10.3527618 -6 38.63703305] [ori=0 0.96592583 -0.25881905 1 0 0 0 -0.25881905 -0.96592583]

@@ -1,0 +1,16 @@
+0 LDCad shadow info for "~Plate  8 x 16 x  0.667 with Rounded Corners and Reduced Number of Studs - Quarter {unofficial}"
+
+0 Author: LDCad Shadow Library
+0 !LICENSE CC BY-SA 4.0, see LICENSE.md
+
+0 !HISTORY 2026-06-03 {Philippe Hurbain} Initial info for s\5251s01.dat {unofficial}
+
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 12] [pos=40 16 50] [grid=C 2 C 3 20 20]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 12] [pos=110 16 50] [grid=1 C 3 0 20]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 12] [pos=130 16 40] [grid=1 C 2 0 20]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 12] [pos=150 16 30]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=150 16 50]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=130 16 70]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=80 8 50] [grid=C 2 C 3 20 20]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=10 8 50] [grid=1 C 3 0 20]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=80 8 10] [ori=0 0 -1 0 1 0 1 0 0] [grid=1 C 8 0 20]

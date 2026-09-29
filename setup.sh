@@ -7,15 +7,15 @@ cd "$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
 faltan=()
 paso() { echo; echo "== $*"; }
 
-paso "Node (hace falta >= 23.6 para ejecutar .ts sin compilar)"
-node_ok() { node -e 'const [a,b]=process.versions.node.split(".").map(Number);process.exit(a>23||(a===23&&b>=6)?0:1)' 2>/dev/null; }
+paso "Node (hace falta >= 22.18: ejecuta .ts sin compilar)"
+node_ok() { node -e 'const [a,b]=process.versions.node.split(".").map(Number);process.exit(a>22||(a===22&&b>=18)?0:1)' 2>/dev/null; }
 if ! node_ok; then
 	SUDO=$(command -v sudo || true)
 	{ $SUDO npm install -g n --no-audit --no-fund && $SUDO n 24 && hash -r; } >/dev/null 2>&1 || true
 	if ! node_ok && [ -s "$HOME/.nvm/nvm.sh" ]; then . "$HOME/.nvm/nvm.sh" && nvm install 24 >/dev/null 2>&1 && nvm use 24 >/dev/null; fi
 fi
 node -v
-node_ok || { echo "AVISO: Node < 23.6"; faltan+=("node>=23.6"); }
+node_ok || { echo "AVISO: Node < 22.18"; faltan+=("node>=22.18"); }
 
 paso "Bibliotecas de sistema para Chromium"
 if command -v apt-get >/dev/null; then
@@ -30,10 +30,10 @@ paso "Datos (.cache)"
 mkdir -p .cache/rebrickable
 (
 	cd .cache
-	[ -d ldraw ] || { curl -fsSL -o complete.zip https://library.ldraw.org/library/updates/complete.zip && unzip -q complete.zip && rm -f complete.zip; } || echo "AVISO: falló la biblioteca LDraw"
-	[ -d LDCadShadowLibrary-main ] || { curl -fsSL -o shadow.zip https://github.com/RolandMelkert/LDCadShadowLibrary/archive/refs/heads/main.zip && unzip -q shadow.zip && rm -f shadow.zip; } || echo "AVISO: falló la shadow library"
+	[ -d ldraw ] || { curl -fsSL --retry 5 --retry-all-errors --retry-delay 3 -o complete.zip https://library.ldraw.org/library/updates/complete.zip && unzip -q complete.zip && rm -f complete.zip; } || echo "AVISO: falló la biblioteca LDraw"
+	[ -d LDCadShadowLibrary-main ] || cp -r ../datos/LDCadShadowLibrary-main . || echo "AVISO: falló la shadow library"
 	for f in colors parts elements inventories inventory_parts sets; do
-		[ -f "rebrickable/$f.csv.gz" ] || curl -fsSL -o "rebrickable/$f.csv.gz" "https://cdn.rebrickable.com/media/downloads/$f.csv.gz" || echo "AVISO: falló rebrickable/$f"
+		[ -f "rebrickable/$f.csv.gz" ] || curl -fsSL --retry 5 --retry-all-errors --retry-delay 3 -o "rebrickable/$f.csv.gz" "https://cdn.rebrickable.com/media/downloads/$f.csv.gz" || echo "AVISO: falló rebrickable/$f"
 	done
 )
 [ -d .cache/ldraw/parts ] || faltan+=("biblioteca LDraw")

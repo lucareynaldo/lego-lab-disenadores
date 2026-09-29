@@ -1,0 +1,8 @@
+0 LDCad shadow info for "~Technic Brick  2 x  4 with  4 Holes and  2 Pins, Hole {unofficial}"
+
+0 Author: LDCad Shadow Library
+0 !LICENSE CC BY-SA 4.0, see LICENSE.md
+
+0 !HISTORY 2026-06-04 {Philippe Hurbain} Initial info for s\112174s01.dat {unofficial}
+
+0 !LDCAD SNAP_CYL [id=connhole] [gender=F] [caps=none] [secs=R 8 2   R 6 16   R 8 2] [center=true] [slide=true] [pos=0 10 -10] [ori=0 0 -1 1 0 0 0 -1 0]

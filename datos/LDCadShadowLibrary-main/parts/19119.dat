@@ -1,0 +1,15 @@
+0 LDCad shadow info for "Plant Flower Stem with Bar and  6 Stems"
+
+0 Author: LDCad Shadow Library
+0 !LICENSE CC BY-SA 4.0, see LICENSE.md
+
+0 !HISTORY 2016-02-05 {Roland Melkert} Initial info for 19119.dat
+0 !HISTORY 2026-03-21 {Philippe Hurbain} Used 24855 stem structure to allow for finer flower placement
+
+0 !LDCAD SNAP_CYL [gender=M] [caps=one] [secs=R 4 10] [slide=true] [ori=1 0 0 0 -1 0 0 0 -1]
+0 !LDCAD SNAP_CYL [gender=M] [caps=one] [secs=R 2.25 18.5   R 2 7] [slide=true] [pos=-6.49999589 -10.06239278 0] [ori=-0.8660253 0.50000017 0 0.50000017 0.8660253 0 0 0 -1]
+0 !LDCAD SNAP_CYL [gender=M] [caps=one] [secs=R 2.25 18.5   R 2 7] [slide=true] [pos=3.24997791 -10.06241343 5.62866163] [ori=0.43301237 -0.25000092 -0.86602531 0.50000167 0.86602444 0 0.74999908 -0.4330141 0.50000017]
+0 !LDCAD SNAP_CYL [gender=M] [caps=one] [secs=R 2.25 17.5   R 2 7] [slide=true] [pos=-3.75852542 -5.73656807 -6.50964556] [ori=0.17100945 0.46984672 -0.86602531 -0.93969312 0.34201878 0 0.29619692 0.81379802 0.50000017]
+0 !LDCAD SNAP_CYL [gender=M] [caps=one] [secs=R 2.25 18.5   R 2 7] [slide=true] [pos=3.24997791 -10.06241343 -5.62866163] [ori=0.43301237 -0.25000092 0.86602531 0.50000167 0.86602444 0 -0.74999908 0.4330141 0.50000017]
+0 !LDCAD SNAP_CYL [gender=M] [caps=one] [secs=R 2.25 17.5   R 2 7] [slide=true] [pos=-3.75852542 -5.73656807 6.50964556] [ori=0.17100945 0.46984672 0.86602531 -0.93969312 0.34201878 0 -0.29619692 -0.81379802 0.50000017]
+0 !LDCAD SNAP_CYL [gender=M] [caps=one] [secs=R 2.25 17.5   R 2 7] [slide=true] [pos=7.51706218 -5.73655724 0] [ori=0.34201925 -0.93969295 0 0.93969295 0.34201925 0 0 0 1]

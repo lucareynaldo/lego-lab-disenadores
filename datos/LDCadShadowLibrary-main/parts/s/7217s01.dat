@@ -1,0 +1,11 @@
+0 LDCad shadow info for "~Slope Brick Curved  8 x  1 x  1.667 without Patternable Surfaces {unofficial}"
+
+0 Author: LDCad Shadow Library
+0 !LICENSE CC BY-SA 4.0, see LICENSE.md
+
+0 !HISTORY 2026-04-14 {Philippe Hurbain} Initial info for s\7217s01.dat {unofficial}
+
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=0 16 -10] [grid=1 C 3 0 10]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=0 24 -50] [grid=1 C 3 0 10]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=0 32 -90] [grid=1 C 3 0 10]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=0 40 -130] [grid=1 C 3 0 10]

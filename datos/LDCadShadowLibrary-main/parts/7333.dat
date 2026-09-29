@@ -1,0 +1,10 @@
+0 LDCad shadow info for "Track with Gear Rack Straight  3 x 16 {unofficial}"
+
+0 Author: LDCad Shadow Library
+0 !LICENSE CC BY-SA 4.0, see LICENSE.md
+
+0 !HISTORY 2026-06-04 {Philippe Hurbain} Initial info for 7333.dat {unofficial}
+
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=140 -8 0] [grid=C 2 C 2 20 20]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [pos=-140 -8 0] [grid=C 2 C 2 20 20]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 12] [grid=C 12 C 2 20 20]

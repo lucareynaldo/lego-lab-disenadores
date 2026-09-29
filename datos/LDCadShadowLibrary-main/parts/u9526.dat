@@ -1,0 +1,10 @@
+0 LDCad shadow info for "~Electric Bluetooth Remote Control Case Bottom (Needs Work) {unofficial}"
+
+0 Author: LDCad Shadow Library
+0 !LICENSE CC BY-SA 4.0, see LICENSE.md
+
+0 !HISTORY 2026-06-04 {Philippe Hurbain} Initial info for u9526.dat {unofficial}
+
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [grid=C 6 C 4 20 20]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 8 4] [pos=31 -38 0] [ori=0 1 0 0 0 1 1 0 0]
+0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 8 4] [pos=-31 -38 0] [ori=0 -1 0 0 0 1 -1 0 0]
