@@ -25,6 +25,9 @@ export type Paso = {
 	refs: Referencia[];
 	// ROTSTEP: el constructor gira el modelo antes de este paso.
 	rotacion: Vec3 | null;
+	// Notas del diseñador (taller): `0 // PASO: …` y `0 // REVELAR`. `revelar`: número de línea de la nota.
+	etiqueta?: string;
+	revelar?: number;
 };
 
 export const normalizarNombre = (n: string) => n.trim().replace(/\\/g, '/').toLowerCase();
@@ -194,6 +197,16 @@ export function pasosDe(a: Archivo): Paso[] {
 	a.lineas.forEach((l, i) => {
 		const t = l.trim();
 		if (t === '0 STEP') return cerrar();
+		const etiqueta = /^0\s+\/\/\s*PASO:\s*(.*)$/.exec(t);
+		if (etiqueta) {
+			const texto = etiqueta[1].trim();
+			if (texto) actual.etiqueta = actual.etiqueta ? `${actual.etiqueta} · ${texto}` : texto;
+			return;
+		}
+		if (/^0\s+\/\/\s*REVELAR\s*$/.test(t)) {
+			actual.revelar ??= i + 1;
+			return;
+		}
 		if (t.startsWith('0 ROTSTEP')) {
 			// "0 ROTSTEP x y z [REL|ABS|ADD]" cierra el paso y fija cómo se ve (cómo está girado el
 			// modelo) en ese paso. "0 ROTSTEP END" vuelve a la vista normal.

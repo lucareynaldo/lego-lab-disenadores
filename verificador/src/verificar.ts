@@ -216,6 +216,19 @@ export function verificar(bib: Biblioteca, principal: string, opciones: Opciones
 			return;
 		}
 		const pasos = pasosDe(archivo);
+		// Revelación (nota del diseñador, `0 // REVELAR`): tiene que caer en el último cuarto de los pasos.
+		const tramoFinal = Math.ceil(pasos.length / 4);
+		pasos.forEach((p, k) => {
+			if (p.revelar && k < pasos.length - tramoFinal)
+				agregar({
+					severidad: 'aviso',
+					regla: 'intencion-revelar',
+					mensaje: `La revelación está en el paso ${k + 1} de ${pasos.length}: no queda en el tramo final (los últimos ${tramoFinal})`,
+					submodelo: nombre,
+					paso: k + 1,
+					piezas: [`${nombre}:${p.revelar}`],
+				});
+		});
 		// Primero los sub-armados que usa.
 		for (const paso of pasos)
 			for (const ref of paso.refs) {
