@@ -25,6 +25,18 @@ Está documentada al principio de [`src/dsl.ts`](src/dsl.ts). Resumen de los con
 - `{en: grilla(x, capas, z), rot: 'X90 Y45'}`: colocación libre; `en` en LDU y `rot` como giros por eje en grados. Se usa para clips y bisagras.
 - `giro`: con `sobre` y `debajo` vale 0, 90, 180 o 270; con `conector` admite cualquier ángulo.
 
+Sub-armados:
+
+- La pieza base de `sobre`, `debajo` o `conector` puede estar en el mismo submodelo o dentro de un sub-armado ya colocado en él. Si ese sub-armado está colocado más de una vez, la pieza suelta es ambigua (error) y se elige la copia con la colocación: `const c = m.raiz.colocar(ala, …); … {sobre: c.pieza(punta), …}`. Las referencias se anidan: `c.pieza(d.pieza(x))`.
+- `colocar(sub, {sobre, stud, ancla, con, giro})` (o `debajo`/`antistud`, o `conector`/`propio`) encastra el sub-armado entero: `ancla` es la pieza del sub-armado que hace el encastre, y queda donde quedaría como pieza suelta. Sin encastre, `colocar` sigue aceptando `en` y `rot`.
+- `sub.poseDe(pieza)`: dónde está una pieza en el sistema de `sub`, sin cuentas a mano.
+
+Notas de armado (optativas; LDraw las ignora, el verificador las lee):
+
+- `sub.paso('raíces en molinete')` → `0 // PASO: …`. Mejor la función que la apariencia.
+- `sub.paso('por abajo', {vista: 'debajo'})` → `0 ROTSTEP 180 0 0 ABS` (también `'atras'` o `[x, y, z]` en grados). El constructor gira el modelo: el verificador cambia qué es "abajo".
+- `sub.revelar()` antes de cerrar el paso → `0 // REVELAR`. Aviso `intencion-revelar` si no queda en el último cuarto de los pasos de su archivo.
+
 ## Servidor de render persistente
 
 Cada render sin servidor paga el empaquetado y el arranque de Remotion (~30 s). Con un servidor vivo baja a ~3–5 s:

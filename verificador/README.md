@@ -79,6 +79,7 @@ El código de salida es 1 si algún modelo tiene errores. Con `--json` escribe u
 | `subarmado-no-entra` | aviso | Un sub-armado declarado no se puede colocar entero (tiene piezas a los dos lados de algo ya puesto), pero el modelo se arma colocando sus piezas por separado |
 | `camino-dudoso` | aviso | Igual, pero la pieza solo tiene encastres sin eje (clips, bisagras, rótulas): se probó solo desde arriba |
 | `se-vuelca` / `queda-inclinado` | error / aviso | El objeto termina apoyado a más de 25° (se vuelca) o entre 5° y 25°. Se calcula con la cara de la envolvente convexa que queda debajo del centro de masa |
+| `intencion-revelar` | aviso | Nota del diseñador (`0 // REVELAR`, del `revelar()` del taller) que no se cumple: la revelación no está en el último cuarto de los pasos de su archivo |
 
 **Masa.** Se estima proporcional a la superficie de cada pieza, calibrada con el ladrillo 2×4 (2,32 g).
 
